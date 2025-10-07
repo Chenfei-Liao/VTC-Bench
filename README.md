@@ -1,4 +1,4 @@
-# <p align="center"><strong>Are MLLM Benchmarks Ready for Benchmarking Visual Token Compression Methods</strong></p>
+# <p align="center"><strong>Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods</strong></p>
 <div align="center">
 
 Chenfei Liao<sup>1,2,6</sup> Wensong Wang<sup>3,2</sup> Zichen Wen<sup>2,5</sup> Xu Zheng<sup>1,4,6</sup> Yiyu Wang<sup>2</sup> Haocong He<sup>2</sup> \

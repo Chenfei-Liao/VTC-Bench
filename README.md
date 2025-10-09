@@ -48,7 +48,7 @@ For FastV, VisionZip, PruMerge+, based on [EffiVLM-Bench](https://github.com/Eff
 
 ### Step3 Analyze data and calculate
 ```
-project-name/
+Data list
 ├── Llava-ov-7B
   ├── Downsample
     ├── 1

@@ -23,10 +23,13 @@ Recent endeavors to accelerate inference in Multimodal Large Language Models (ML
 
 ## Todolist
 
-🚀 Release all the data.
+🚀 Release all the data. [Finished!] 2025/10/9
 
 🚀 Release the evaluation code.
 
+## Data Link
+
+All inference results can be downloaded in [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/cliao127_connect_hkust-gz_edu_cn/EeAPW8i_QwFHlFQyeBjM8J8BghWZQaghSVVgvGCyfvcasg?e=vRBxlp)
 
 ## Quick Start
 

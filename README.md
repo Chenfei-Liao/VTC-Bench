@@ -46,7 +46,33 @@ For DART, based on [DART](https://github.com/ZichenWen1/DART).
 
 For FastV, VisionZip, PruMerge+, based on [EffiVLM-Bench](https://github.com/EffiVLM-Bench/EffiVLM-Bench).
 
-### Step3 Analyze data and calcute
+### Step3 Analyze data and calculate
+```
+project-name/
+├── Llava-ov-7B
+  ├── Downsample
+    ├── 1
+      📄 xxx.jsonl
+    ├── 2
+    ├── 3
+    ├── 4
+    ├── 5
+    ├── 10
+  ├── VisionZip
+    ├── 0.01
+    ├── 0.04
+    ├── 0.0625
+    ├── 0.1111
+    ├── 0.25
+  ├── PruMerge+
+  ├── FastV
+├── Qwen2-VL-7B-Instruct
+  ├── Downsample
+  ├── VisionZip
+  ├── PruMerge+
+  ├── FastV
+  ├── DART
+```
 
 ```
 python analyze_results.py --batch_mode --models Qwen2-VL-7B-Instruct Llava-ov-7B --methods dart fastv prumerge+ visionzip --downsamples 2 3 4 5 10

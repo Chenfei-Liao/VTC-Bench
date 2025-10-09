@@ -36,9 +36,15 @@ All inference results can be downloaded in [OneDrive](https://hkustgz-my.sharepo
 
 ### Step1 Run the downsampled methods
 
+Based on [DART](https://github.com/ZichenWen1/DART):
+
 Replace the qwen2_vl.py of the original lmms_eval files to [ours](qwen2_vl.py).
 
 ### Step2 Run the methods waited for evaluation
+
+For DART, based on [DART](https://github.com/ZichenWen1/DART).
+
+For FastV, VisionZip, PruMerge+, based on [EffiVLM-Bench](https://github.com/EffiVLM-Bench/EffiVLM-Bench).
 
 ### Step3 Analyze data and calcute
 

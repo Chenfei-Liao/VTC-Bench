@@ -1,4 +1,4 @@
-model,dataset,method,downsample_level,group_a_total,group_a_correct,group_a_accuracy,group_b_total,group_b_correct,group_b_accuracy
+model,dataset,method,downsample_level,group_b_total,group_b_correct,group_b_accuracy,group_a_total,group_a_correct,group_a_accuracy
 Qwen2-VL-7B-Instruct,chartqa,dart,2,1570,1083,68.98089172,469,183,39.01918977
 Qwen2-VL-7B-Instruct,gqa,dart,2,6815,6005,88.11445341,1021,601,58.86385896
 Qwen2-VL-7B-Instruct,mmbench_cn_dev,dart,2,3156,2984,94.55006337,230,120,52.17391304
@@ -234,3 +234,4 @@ Llava-ov-7B,mmbench_cn_dev,visionzip,10,2400,1292,53.83333333,986,323,32.7586206
 Llava-ov-7B,mmbench_en_dev,visionzip,10,2599,1416,54.48249327,1059,298,28.13975449
 Llava-ov-7B,mmstar,visionzip,10,405,146,36.04938272,433,107,24.7113164
 Llava-ov-7B,pope,visionzip,10,6094,3768,61.83130948,1863,784,42.08266237
+

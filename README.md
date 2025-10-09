@@ -45,3 +45,18 @@ If you have any problems, please contact :
 📧 cliao127@connect.hkust-gz.edu.cn
 
 We will response and fix the problems ASAP! Thanks!
+
+## Citations
+
+If you find this project helpful, please consider citing the following paper:
+```
+@misc{liao2025usingrightbenchmarkevaluation,
+      title={Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods}, 
+      author={Chenfei Liao and Wensong Wang and Zichen Wen and Xu Zheng and Yiyu Wang and Haocong He and Yuanhuiyi Lyu and Lutao Jiang and Xin Zou and Yuqian Fu and Bin Ren and Linfeng Zhang and Xuming Hu},
+      year={2025},
+      eprint={2510.07143},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.07143}, 
+}
+```

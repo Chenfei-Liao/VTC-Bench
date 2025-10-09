@@ -29,7 +29,9 @@ Recent endeavors to accelerate inference in Multimodal Large Language Models (ML
 
 ## Data Link
 
-All inference results can be downloaded in [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/cliao127_connect_hkust-gz_edu_cn/EeAPW8i_QwFHlFQyeBjM8J8BghWZQaghSVVgvGCyfvcasg?e=vRBxlp)
+All inference results (raw data) can be downloaded in [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/cliao127_connect_hkust-gz_edu_cn/EeAPW8i_QwFHlFQyeBjM8J8BghWZQaghSVVgvGCyfvcasg?e=vRBxlp).
+
+Final evaluation results can be found in [Final_Results](Final_Results.csv).
 
 
 ## Quick Start

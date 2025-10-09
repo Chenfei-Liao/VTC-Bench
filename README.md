@@ -2,7 +2,7 @@
 <div align="center">
 
 [Chenfei Liao<sup>1,2,6](https://chenfei-liao.github.io/)</sup> Wensong Wang<sup>3,2</sup> [Zichen Wen<sup>2,5](https://github.com/ZichenWen1)</sup> [Xu Zheng<sup>1,4,6](https://zhengxujosh.github.io/)</sup> Yiyu Wang<sup>2</sup> Haocong He<sup>2</sup> \
-Yuanhuiyi Lyu<sup>1,6</sup> Lutao Jiang<sup>1,6</sup> Xin Zou<sup>1,6</sup> Yuqian Fu<sup>4</sup> Bin Ren<sup>7,8,4 </sup>Linfeng Zhang<sup>2,📧</sup> Xuming Hu<sup>1,6,📧</sup>
+[Yuanhuiyi Lyu<sup>1,6](https://qc-ly.github.io/)</sup> [Lutao Jiang<sup>1,6](https://lutao2021.github.io/)</sup> Xin Zou<sup>1,6</sup> [Yuqian Fu<sup>4](https://yuqianfu.com/)</sup> [Bin Ren<sup>7,8,4](https://amazingren.github.io/) </sup>Linfeng Zhang<sup>2,📧</sup> Xuming Hu<sup>1,6,📧</sup>
 
 </div>
 

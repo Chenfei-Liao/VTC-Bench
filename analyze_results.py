@@ -292,8 +292,8 @@ def analyze_dataset_groups(origin_path: Path, downsample_path: Path, dataset_nam
     downsample_dict = {item['doc_id']: item for item in downsample_data}
 
     # Create groups
-    group_a_ids = []  # Origin correct & Downsample correct
-    group_b_ids = []  # Origin correct & Downsample wrong
+    group_b_ids = []  # Origin correct & Downsample correct
+    group_a_ids = []  # Origin correct & Downsample wrong
 
     for doc_id in origin_dict:
         if doc_id not in downsample_dict:
@@ -307,9 +307,9 @@ def analyze_dataset_groups(origin_path: Path, downsample_path: Path, dataset_nam
         
         if origin_correct:
             if downsample_correct:
-                group_a_ids.append(doc_id)
-            else:
                 group_b_ids.append(doc_id)
+            else:
+                group_a_ids.append(doc_id)
 
     logger.info(f"Group A (Origin right & Downsample right): {len(group_a_ids)} samples")
     logger.info(f"Group B (Origin right & Downsample wrong): {len(group_b_ids)} samples")

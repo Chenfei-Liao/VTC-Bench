@@ -27,23 +27,30 @@
 Recent endeavors to accelerate inference in Multimodal Large Language Models (MLLMs) have primarily focused on visual token compression. The effectiveness of these methods is typically assessed by measuring the accuracy drop on established benchmarks, comparing model performance before and after compression. However, these benchmarks are originally designed to assess the perception and reasoning capabilities of MLLMs, rather than to evaluate compression techniques. As a result, directly applying them to visual token compression introduces a task mismatch. Strikingly, our investigation reveals that simple image downsampling consistently outperforms many advanced compression methods across multiple widely used benchmarks. Through extensive experiments, we make the following observations: (i) Current benchmarks are noisy for the visual token compression task. (ii) Down-sampling is able to serve as a data filter to evaluate the difficulty of samples in the visual token compression task. Motivated by these findings, we introduce VTC-Bench, an evaluation framework that incorporates a data filtering mechanism to denoise existing benchmarks, thereby enabling fairer and more accurate assessment of visual token compression methods. 
 
 
-## Todolist
-
-🚀 Release all the data. [Finished!] 2025/10/9
-
-🚀 Release the evaluation code.
-
 ## Data Link
 
 All inference results can be downloaded in [OneDrive](https://hkustgz-my.sharepoint.com/:u:/g/personal/cliao127_connect_hkust-gz_edu_cn/EeAPW8i_QwFHlFQyeBjM8J8BghWZQaghSVVgvGCyfvcasg?e=vRBxlp)
 
+
 ## Quick Start
+
+### Step1 Run the downsampled methods
+
+Replace the qwen2_vl.py of the original lmms_eval files to [ours](qwen2_vl.py).
+
+### Step2 Run the methods waited for evaluation
+
+### Step3 Analyze data and calcute
+
+```
+python analyze_results.py --batch_mode --models Qwen2-VL-7B-Instruct Llava-ov-7B --methods dart fastv prumerge+ visionzip --downsamples 2 3 4 5 10
+```
 
 
 
 ## Contact
 
-If you have any problems, please contact :
+If you have any problems, please contact:
 
 📧 cliao127@connect.hkust-gz.edu.cn
 

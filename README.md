@@ -104,3 +104,7 @@ If you find this project helpful, please consider citing the following paper:
       url={https://arxiv.org/abs/2510.07143}, 
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Chenfei-Liao/VTC-Bench&type=date&logscale&legend=top-left)](https://www.star-history.com/#Chenfei-Liao/VTC-Bench&type=date&logscale&legend=top-left)

@@ -1,7 +1,7 @@
 # <p align="center"><strong>Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods</strong></p>
 <div align="center">
 
-
+[![Page](https://img.shields.io/badge/github-Project_page-blue?logo=github)](https://chenfei-liao.github.io/VTC-Bench-Page/)
 [![arXiv](https://img.shields.io/badge/arXiv-2510.07143-brown?style=flat-square)](https://arxiv.org/abs/2510.07143)
 
 [Chenfei Liao<sup>1,2,6](https://chenfei-liao.github.io/)</sup> Wensong Wang<sup>3,2</sup> [Zichen Wen<sup>2,5](https://github.com/ZichenWen1)</sup> [Xu Zheng<sup>1,4,6](https://zhengxujosh.github.io/)</sup> Yiyu Wang<sup>2</sup> Haocong He<sup>2</sup> \

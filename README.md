@@ -3,6 +3,7 @@
 
 [![Page](https://img.shields.io/badge/github-Project_page-blue?logo=github)](https://chenfei-liao.github.io/VTC-Bench-Page/)
 [![arXiv](https://img.shields.io/badge/arXiv-2510.07143-brown?style=flat-square)](https://arxiv.org/abs/2510.07143)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [Chenfei Liao<sup>1,2,6](https://chenfei-liao.github.io/)</sup> [Wensong Wang<sup>3,2](https://scholar.google.com/citations?hl=en&user=2zrWveUAAAAJ)</sup> [Zichen Wen<sup>2,5](https://github.com/ZichenWen1)</sup> [Xu Zheng<sup>1,4,6](https://zhengxujosh.github.io/)</sup> [Yiyu Wang<sup>2](https://github.com/lern-to-write/)</sup> [Haocong He<sup>2](https://openreview.net/profile?id=%7EHaocong_He1)</sup> \
 [Yuanhuiyi Lyu<sup>1,6](https://qc-ly.github.io/)</sup> [Lutao Jiang<sup>1,6](https://lutao2021.github.io/)</sup> [Xin Zou<sup>1,6](https://scholar.google.com/citations?user=z39tx_sAAAAJ)</sup> [Yuqian Fu<sup>4](https://yuqianfu.com/)</sup> [Bin Ren<sup>7,8,4](https://amazingren.github.io/)</sup> [Linfeng Zhang<sup>2,📧](https://www.zhanglinfeng.tech/index_chinese.html)</sup> [Xuming Hu<sup>1,6,📧](https://xuminghu.github.io/)</sup>
@@ -17,6 +18,10 @@
 <sup>7</sup>University of Pisa <sup>8</sup>University of Trento
   
 </div>
+
+## 🚩 News
+- **[2026.04.03]** 🚀 **VTC-Bench v1.0** is released! We have completed a full code refactor for better usability and performance.
+- **[2026.04.01]** 📝 Our paper is now available on [arXiv](https://arxiv.org/abs/2510.07143).
 
 ## Abstract
 
@@ -37,7 +42,7 @@ Surprisingly, we find that **image downsampling consistently exceeds other sophi
 *Some data in the existing benchmarks is overly simplistic and irrelevant to evaluating visual token compression methods, leading to the unreasonable phenomenon that even the downsampling method is sufficient to deal with the visual token compression task.*
 
 <div align="center">
-    <img src="mot.png" width="100%"/>
+    <img src="assets/mot.png" width="100%"/>
 </div>
 
 To validate this, we design a data-centric analysis using downsampling as a discriminator. We identify two crucial findings:
@@ -49,7 +54,7 @@ To validate this, we design a data-centric analysis using downsampling as a disc
 Based on these findings, we propose VTC-Bench, a new evaluation framework specifically designed to optimize and denoise current existing benchmarks. By explicitly distinguishing between “simple” and “difficult” samples through downsampling, VTC-Bench adaptively selects "difficult" samples that satisfy the requirements of evaluating visual token compression methods.
 
 <div align="center">
-    <img src="pipeline.png" width="100%"/>
+    <img src="assets/pipeline.png" width="100%"/>
 </div>
 
 The pipeline consists of three critical steps:
@@ -69,22 +74,38 @@ Final evaluation results can be found in [Final_Results](Final_Results.csv).
 
 ## Quick Start
 
+### Environment
+```
+ conda create -n VTC python=3.10 -y
+ conda activate VTC
+ cd Qwen2-VL/transformers && pip install -e .
+ pip install accelerate qwen-vl-utils[decord]
+ pip install flash-attn --no-build-isolation
+ cd ../../lmms-eval && pip install -e .
+ pip install qwen-vl-utils
+ pip install flash-attention-softmax-n
+ ```
+
 ### Step1 Run the downsampled methods
 
-Based on [DART](https://github.com/ZichenWen1/DART):
-
-Replace the qwen2_vl.py of the original lmms_eval files to [ours](qwen2_vl.py).
-
+```
+bash scripts/dart.sh false [downsample_ratio]
+```
 ### Step2 Run the methods waited for evaluation
 
-For DART, based on [DART](https://github.com/ZichenWen1/DART).
-
-For FastV, VisionZip, PruMerge+, based on [EffiVLM-Bench](https://github.com/EffiVLM-Bench/EffiVLM-Bench).
+```
+bash scripts/dart.sh true 1 [reduction_ratio]
+bash scripts/effivlm.sh 1 [reduction_ratio]
+```
 
 ### Step3 Analyze data and calculate
 ```
+python tools/reorganize_data.py
+```
+
+```
 Data list
-├── Llava-ov-7B
+├── Qwen2-VL-7B-Instruct
   ├── Downsample
     ├── 1
       📄 xxx.jsonl
@@ -101,7 +122,7 @@ Data list
     ├── 0.25
   ├── PruMerge+
   ├── FastV
-├── Qwen2-VL-7B-Instruct
+├── Llava-ov-7B
   ├── Downsample
   ├── VisionZip
   ├── PruMerge+
@@ -110,7 +131,7 @@ Data list
 ```
 
 ```
-python analyze_results.py --batch_mode --models Qwen2-VL-7B-Instruct Llava-ov-7B --methods dart fastv prumerge+ visionzip --downsamples 2 3 4 5 10
+python tools/analyze_results.py --all
 ```
 
 
@@ -127,14 +148,11 @@ We will response and fix the problems ASAP! Thanks!
 
 If you find this project helpful, please consider citing the following paper:
 ```
-@misc{liao2025usingrightbenchmarkevaluation,
-      title={Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods}, 
-      author={Chenfei Liao and Wensong Wang and Zichen Wen and Xu Zheng and Yiyu Wang and Haocong He and Yuanhuiyi Lyu and Lutao Jiang and Xin Zou and Yuqian Fu and Bin Ren and Linfeng Zhang and Xuming Hu},
-      year={2025},
-      eprint={2510.07143},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.07143}, 
+@article{liao2026usingrightbenchmarkevaluation,
+  title={Are We Using the Right Benchmark: An Evaluation Framework for Visual Token Compression Methods},
+  author={Liao, Chenfei and Wang, Wensong and Wen, Zichen and Zheng, Xu and Wang, Yiyu and He, Haocong and Lyu, Yuanhuiyi and Jiang, Lutao and Zou, Xin and Fu, Yuqian and Ren, Bin and Zhang, Linfeng and Hu, Xuming},
+  journal={arXiv preprint arXiv:2510.07143},
+  year={2026}
 }
 ```
 

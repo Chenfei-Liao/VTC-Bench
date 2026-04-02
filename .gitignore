@@ -1,0 +1,18 @@
+# Logs and Results
+logs/
+Data/
+analysis_results/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Environment
+.cursor/
+.vscode/
+.venv/
+.env
+
+# OS files
+.DS_Store

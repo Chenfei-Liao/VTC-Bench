@@ -1,0 +1,1 @@
+from .modeling_qwen2_5_vl_self import Qwen2_5_VLForConditionalGeneration

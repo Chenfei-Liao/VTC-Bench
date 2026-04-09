@@ -20,6 +20,7 @@
 </div>
 
 ## 🚩 News
+- **[2026.04.06]** 📝 Our paper is accepted by ACL 2026 Main Track!
 - **[2026.04.03]** 🚀 **VTC-Bench v1.1** is released! We have completed a full code refactor for better usability and performance. 
 - **[2026.01.23]** 📝 Our updated paper is now available on [arXiv](https://arxiv.org/abs/2510.07143).
 - **[2026.10.08]** 🚀 **VTC-Bench v1.0** is released!
